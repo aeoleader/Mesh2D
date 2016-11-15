@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4772A0D21DD561680015DA72 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4772A0D11DD561680015DA72 /* main.cpp */; };
+		4772A0DE1DD5623B0015DA72 /* libCGAL_Core.12.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4772A0D91DD5623B0015DA72 /* libCGAL_Core.12.0.0.dylib */; };
+		4772A0DF1DD5623B0015DA72 /* libCGAL.12.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4772A0DA1DD5623B0015DA72 /* libCGAL.12.0.0.dylib */; };
+		4772A0E01DD5623B0015DA72 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4772A0DB1DD5623B0015DA72 /* libboost_thread-mt.dylib */; };
+		4772A0E11DD5623B0015DA72 /* libmpfr.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4772A0DC1DD5623B0015DA72 /* libmpfr.4.dylib */; };
+		4772A0E21DD5623B0015DA72 /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4772A0DD1DD5623B0015DA72 /* libgmp.10.dylib */; };
+		4772A0E81DD5670D0015DA72 /* CGAL_Triangulation_2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4772A0E71DD5670D0015DA72 /* CGAL_Triangulation_2D.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,13 @@
 /* Begin PBXFileReference section */
 		4772A0CE1DD561680015DA72 /* Mesh2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mesh2D; sourceTree = BUILT_PRODUCTS_DIR; };
 		4772A0D11DD561680015DA72 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4772A0D91DD5623B0015DA72 /* libCGAL_Core.12.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL_Core.12.0.0.dylib; path = ../../../../../usr/local/Cellar/cgal/4.9/lib/libCGAL_Core.12.0.0.dylib; sourceTree = "<group>"; };
+		4772A0DA1DD5623B0015DA72 /* libCGAL.12.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL.12.0.0.dylib; path = ../../../../../usr/local/Cellar/cgal/4.9/lib/libCGAL.12.0.0.dylib; sourceTree = "<group>"; };
+		4772A0DB1DD5623B0015DA72 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.62.0/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
+		4772A0DC1DD5623B0015DA72 /* libmpfr.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpfr.4.dylib; path = ../../../../../usr/local/Cellar/mpfr/3.1.5/lib/libmpfr.4.dylib; sourceTree = "<group>"; };
+		4772A0DD1DD5623B0015DA72 /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = ../../../../../usr/local/Cellar/gmp/6.1.1/lib/libgmp.10.dylib; sourceTree = "<group>"; };
+		4772A0E31DD564200015DA72 /* CGAL_Triangulation_2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGAL_Triangulation_2D.h; sourceTree = "<group>"; };
+		4772A0E71DD5670D0015DA72 /* CGAL_Triangulation_2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGAL_Triangulation_2D.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4772A0DE1DD5623B0015DA72 /* libCGAL_Core.12.0.0.dylib in Frameworks */,
+				4772A0DF1DD5623B0015DA72 /* libCGAL.12.0.0.dylib in Frameworks */,
+				4772A0E01DD5623B0015DA72 /* libboost_thread-mt.dylib in Frameworks */,
+				4772A0E11DD5623B0015DA72 /* libmpfr.4.dylib in Frameworks */,
+				4772A0E21DD5623B0015DA72 /* libgmp.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +61,7 @@
 			children = (
 				4772A0D01DD561680015DA72 /* Mesh2D */,
 				4772A0CF1DD561680015DA72 /* Products */,
+				4772A0D81DD5623A0015DA72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +77,22 @@
 			isa = PBXGroup;
 			children = (
 				4772A0D11DD561680015DA72 /* main.cpp */,
+				4772A0E31DD564200015DA72 /* CGAL_Triangulation_2D.h */,
+				4772A0E71DD5670D0015DA72 /* CGAL_Triangulation_2D.cpp */,
 			);
 			path = Mesh2D;
+			sourceTree = "<group>";
+		};
+		4772A0D81DD5623A0015DA72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4772A0D91DD5623B0015DA72 /* libCGAL_Core.12.0.0.dylib */,
+				4772A0DA1DD5623B0015DA72 /* libCGAL.12.0.0.dylib */,
+				4772A0DB1DD5623B0015DA72 /* libboost_thread-mt.dylib */,
+				4772A0DC1DD5623B0015DA72 /* libmpfr.4.dylib */,
+				4772A0DD1DD5623B0015DA72 /* libgmp.10.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4772A0E81DD5670D0015DA72 /* CGAL_Triangulation_2D.cpp in Sources */,
 				4772A0D21DD561680015DA72 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,14 +250,34 @@
 		4772A0D61DD561680015DA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/cgal/4.9/lib,
+					/usr/local/Cellar/boost/1.62.0/lib,
+					/usr/local/Cellar/mpfr/3.1.5/lib,
+					/usr/local/Cellar/gmp/6.1.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Debug;
 		};
 		4772A0D71DD561680015DA72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/cgal/4.9/lib,
+					/usr/local/Cellar/boost/1.62.0/lib,
+					/usr/local/Cellar/mpfr/3.1.5/lib,
+					/usr/local/Cellar/gmp/6.1.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Release;
 		};
